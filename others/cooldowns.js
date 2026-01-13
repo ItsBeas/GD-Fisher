@@ -2,7 +2,7 @@ const { Collection } = require('discord.js');
 const cooldowns = new Collection();
 
 module.exports = {
-	listCooldown: 3600,
+	listCooldown: 1,
 	checkCooldown: (user, list) => {
 		const userListKey = `${user}-${list}`;
 		const cooldownAmount = module.exports.listCooldown * 1000;
